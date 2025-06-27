@@ -52,3 +52,23 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# ---------------------------
+# Angular ignore rules
+# ---------------------------
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.angular/cache/
+/frontend/.angular/
+
+# Angular environment files (if you put secrets there — adjust if needed)
+/frontend/src/environments/environment*.ts
+
+# IDEs and tooling
+/frontend/.vscode/
+/frontend/.DS_Store
+
+# Optional: npm logs
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
