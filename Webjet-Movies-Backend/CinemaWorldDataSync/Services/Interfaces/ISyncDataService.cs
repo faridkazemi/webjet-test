@@ -1,0 +1,7 @@
+﻿namespace CinemaWorldDataSync.Services.Interfaces
+{
+    public interface ISyncDataService
+    {
+        public Task RunAsync(CancellationToken cancellationToken);
+    }
+}

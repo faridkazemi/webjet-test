@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CinemaWorldDataSync": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaWorldDataSync", "CinemaWorldDataSync\CinemaWorldDataSync.csproj", "{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9B89D45-9DF8-4C67-911B-BBBE746D2306}"
+	ProjectSection(SolutionItems) = preProject
+		CinemaWorldDataSync\.env = CinemaWorldDataSync\.env
+		.env = .env
+		docker-compose.yaml = docker-compose.yaml
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisLibrary", "RedisLibrary\RedisLibrary.csproj", "{A8334C00-6B80-457C-A803-425052FB10F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisLibrary.Test", "RedisLibrary.Test\RedisLibrary.Test.csproj", "{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8334C00-6B80-457C-A803-425052FB10F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8334C00-6B80-457C-A803-425052FB10F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8334C00-6B80-457C-A803-425052FB10F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8334C00-6B80-457C-A803-425052FB10F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0D945F7-6CCB-4BC7-AE96-D8C1A82281F6}
+	EndGlobalSection
+EndGlobal

@@ -40,6 +40,8 @@ ScaffoldingReadMe.txt
 ~$*
 *~
 CodeCoverage/
+.env
+secrets/
 
 # MSBuild Binary and Structured Log
 *.binlog
@@ -52,6 +54,9 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+#----VS--------------
+FileContentIndex/
 
 # ---------------------------
 # Angular ignore rules
