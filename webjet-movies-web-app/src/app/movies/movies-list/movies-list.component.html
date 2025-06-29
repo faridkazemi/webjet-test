@@ -2,7 +2,7 @@
     <h4>Movies</h4>
 </div>
 <div class="d-flex flex-row">
-    <ngx-datatable 
+    <ngx-datatable *ngIf="!isLoading" 
     class="bootstrap"
     [rows]="cinemaWorldMovies"
     [columns]="[{ name: 'Title' }, { name: 'Type'}, {name: 'Year'}]"

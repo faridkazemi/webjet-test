@@ -24,6 +24,8 @@ namespace CinemaWorldDataSync
 
             services.AddSingleton<IConnectionMultiplexer>(x =>
             {
+                // For this test project I haven't added any password for connecting to the redis.
+                // But in the real world project connection needs to be secure and move password to secrets/Azure Key vaut
                 return ConnectionMultiplexer.Connect(redisConfigOption.ConnectionString);
             });
 

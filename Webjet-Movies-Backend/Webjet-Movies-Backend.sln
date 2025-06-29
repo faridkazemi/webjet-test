@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisLibrary", "RedisLibrar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisLibrary.Test", "RedisLibrary.Test\RedisLibrary.Test.csproj", "{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webjet-Movies-Backend", "Webjet-Movies-Backend\Webjet-Movies-Backend.csproj", "{71471269-1701-4C7A-8671-14B30EDB6ACD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71471269-1701-4C7A-8671-14B30EDB6ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71471269-1701-4C7A-8671-14B30EDB6ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71471269-1701-4C7A-8671-14B30EDB6ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71471269-1701-4C7A-8671-14B30EDB6ACD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

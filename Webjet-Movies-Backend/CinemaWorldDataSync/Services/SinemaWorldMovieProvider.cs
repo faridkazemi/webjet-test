@@ -26,15 +26,20 @@ namespace CinemaWorldDataSync.Services
         {
             try
             {
-                var response = await _httpClientFactory.CreateClient(_configs.CinemaMovieHttpClientName)
-                    .GetFromJsonAsync<CinemaWorldMoviesDTO>("", cancellationToken);
+                _logger.LogInformation($"Fetching movies from CinemaWorldMovies...");
+
+                var response = new CinemaWorldMoviesDTO();
+                response.Movies = new List<CinemaWorldMovieDTO> { new CinemaWorldMovieDTO {ID="111", Title="AAAA" } };
+                //var response = await _httpClientFactory.CreateClient(_configs.CinemaMovieHttpClientName)
+                //    .GetFromJsonAsync<CinemaWorldMoviesDTO>("", cancellationToken);
 
                 return response;
             }
             catch(Exception ex) 
             {
+                // We don't throw any exception. We just want to log it.
                 _logger.LogError(ex, $"Faild to Get Movies from server.");
-                throw;
+                return new CinemaWorldMoviesDTO();
             }
         }
     }

@@ -17,34 +17,17 @@ namespace RedisLibrary
         public RedisService(IConnectionMultiplexer redisConnection,
             ILogger<RedisService> logger) 
         {
-            //ConnectionMultiplexer.Connect("redis:6379,abortConnect=false,connectTimeout=10000,syncTimeout=10000").GetDatabase();//
             _database = redisConnection.GetDatabase();
+
+            if (_database.Multiplexer.IsConnected)
+            {
+                Console.WriteLine("Redis connected...");
+
+            }
+
             _logger = logger;
-            //var a = _database.Multiplexer.IsConnected;
 
             ConnectionMultiplexer? multiplexer = null;
-
-            for (int i = 0; i < 5; i++)
-            {
-                try
-                {
-                    multiplexer = ConnectionMultiplexer.Connect("redis:6379,abortConnect=false,connectTimeout=10000,syncTimeout=10000");
-
-                    if (multiplexer.IsConnected)
-                    {
-                        Console.WriteLine("Redis connected.");
-                        break;
-                    }
-
-                    Console.WriteLine("Waiting for Redis connection...");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Attempt {i + 1}: Redis not ready yet. Error: {ex.Message}");
-                }
-
-                Task.Delay(2000);
-            }
         }
 
         public async Task SetAsync<T>(string key, T value)
@@ -53,14 +36,16 @@ namespace RedisLibrary
             {
                 var jsonValue = JsonSerializer.Serialize(value);
 
-                if (!_database.Multiplexer.IsConnected)
-                {
-                    Console.WriteLine("Waiting for Redis to be ready...");
-                    await Task.Delay(2000);
-                }
+          
+                _logger.LogInformation($"Adding CinemaWorldMovies to redis...");
 
                 await _database.StringSetAsync(key, jsonValue, null, When.Always, CommandFlags.None);
 
+            }
+            catch (RedisConnectionException ex)
+            {
+                // We probably don't want to throw exception. Just log and go
+                _logger.LogError(ex, $"Faild to connect to redis.");
             }
             catch (Exception ex) 
             {
@@ -74,11 +59,22 @@ namespace RedisLibrary
         {
             try
             {
+                _logger.LogInformation($"Fetching CinemaWorldMovies from redis. Key: {key} ..." );
+
                 var result = await _database.StringGetAsync(key);
+
+                ////////////////////////////////////////Added for test
+                Console.WriteLine($"================== {result}");
 
                 return result.HasValue ? JsonSerializer.Deserialize<T>(result) : default(T?);
             }
-            catch(Exception ex)
+            catch (RedisConnectionException ex)
+            {
+                // We probably don't want to throw exception. Just log and go
+                _logger.LogError(ex, $"Faild to connect to redis.");
+                return default(T?);
+            }
+            catch (Exception ex)
             {
                 _logger.LogError(ex, $"Faild to get values from redis. key {key}");
                 throw;

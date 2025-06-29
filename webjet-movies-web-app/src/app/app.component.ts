@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MoviesListComponent } from './movies-list/movies-list.component';
+import { MoviesListComponent } from './movies/movies-list/movies-list.component';
 
 @Component({
   selector: 'app-root',
