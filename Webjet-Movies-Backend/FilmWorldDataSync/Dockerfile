@@ -9,27 +9,27 @@ WORKDIR /src
 COPY ["NuGet.Config", "."]
 
 COPY ["Webjet-Movies-Backend.sln", "."]
-COPY ["CinemaWorldDataSync/CinemaWorldDataSync.csproj", "CinemaWorldDataSync/"]
 COPY ["FilmWorldDataSync/FilmWorldDataSync.csproj", "FilmWorldDataSync/"]
+COPY ["CinemaWorldDataSync/CinemaWorldDataSync.csproj", "CinemaWorldDataSync/"]
 COPY ["RedisLibrary/RedisLibrary.csproj", "RedisLibrary/"]
 COPY ["RedisLibrary.Test/RedisLibrary.Test.csproj", "RedisLibrary.Test/"]
 COPY ["CinemaWorldDataSync.Test/CinemaWorldDataSync.Test.csproj", "CinemaWorldDataSync.Test/"]
 COPY ["Webjet-Movies-Backend/Webjet-Movies-Backend.csproj", "Webjet-Movies-Backend/"]
 RUN dotnet restore "Webjet-Movies-Backend.sln"
 
-COPY ["CinemaWorldDataSync/", "CinemaWorldDataSync/"]
 COPY ["FilmWorldDataSync/", "FilmWorldDataSync/"]
+COPY ["CinemaWorldDataSync/", "CinemaWorldDataSync/"]
 COPY ["RedisLibrary/", "RedisLibrary/"]
 COPY ["Webjet-Movies-Backend/", "Webjet-Movies-Backend/"]
 
-WORKDIR "/src/CinemaWorldDataSync"
-RUN dotnet build "CinemaWorldDataSync.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/FilmWorldDataSync"
+RUN dotnet build "FilmWorldDataSync.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "CinemaWorldDataSync.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "FilmWorldDataSync.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "CinemaWorldDataSync.dll"]
+ENTRYPOINT ["dotnet", "FilmWorldDataSync.dll"]

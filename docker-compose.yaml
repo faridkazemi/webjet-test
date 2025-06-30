@@ -24,6 +24,23 @@ services:
     secrets:
         - CinemaWorldConfigurationOption__AccessToken
 
+  filmWorldDataSync:
+    build:
+        context: ./Webjet-Movies-Backend
+        dockerfile: ./FilmWorldDataSync/Dockerfile
+    image: filmworlddatasync
+    container_name: filmWorldDataSync
+    depends_on:
+    - redis
+    env_file:
+        - "./.env"
+    environment:
+        - RedisConfigOption__ConnectionString=${RedisConfigOption__ConnectionString}
+        - FilmWorldConfigurationOption__FilmMovieHttpClientName=${FilmWorldConfigurationOption__FilmMovieHttpClientName}
+        - FilmWorldConfigurationOption__BaseUrl=${FilmWorldConfigurationOption__BaseUrl}
+    secrets:
+      - FilmWorldConfigurationOption__AccessToken
+
   Webjet-Movies-Backend:
     build:
       context: ./Webjet-Movies-Backend
@@ -39,8 +56,6 @@ services:
       - RedisConfigOption__ConnectionString=${RedisConfigOption__ConnectionString}
       - ASPNETCORE_URLS=http://+:80
       - ASPNETCORE_HTTP_PORTS=80
-    # ports:
-    #   - "8080:80"
 
   webjet-movies-web-app:
     build:
@@ -57,3 +72,5 @@ services:
 secrets:
   CinemaWorldConfigurationOption__AccessToken:
    file: ./Webjet-Movies-Backend/secrets/CinemaWorldConfigurationOption__AccessToken.txt
+  FilmWorldConfigurationOption__AccessToken:
+   file: ./Webjet-Movies-Backend/secrets/FilmWorldConfigurationOption__AccessToken.txt

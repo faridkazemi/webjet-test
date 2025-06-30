@@ -2,7 +2,7 @@
 
 namespace CinemaWorldDataSync.Services.Interfaces
 {
-    public interface ISinemaWorldMovieProvider
+    public interface ICinemaWorldMovieProvider
     {
         public Task<CinemaWorldMoviesDTO> FetchMoviesAsync(CancellationToken cancellationToken);
         public Task<CinemaWorldMovieDetailsDTO> FetchMoviesDetailsAsync(string id, CancellationToken cancellationToken);

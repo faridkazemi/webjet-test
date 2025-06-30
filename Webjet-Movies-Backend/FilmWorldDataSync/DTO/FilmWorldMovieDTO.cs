@@ -1,6 +1,6 @@
-﻿namespace Webjet_Movies_Backend.Models.DTO
+﻿namespace FilmWorldDataSync.DTO
 {
-    public class CinemaWorldMovieDTO
+    public class FilmWorldMovieDTO
     {
         public string ID { get; set; }
         public string Title { get; set; }

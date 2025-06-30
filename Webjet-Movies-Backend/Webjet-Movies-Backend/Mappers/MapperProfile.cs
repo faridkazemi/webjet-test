@@ -4,12 +4,12 @@ using Webjet_Movies_Backend.Models.ViewModels;
 
 namespace Webjet_Movies_Backend.Mappers
 {
-    public class CinemaWorldMapperProfile: Profile
+    public class MapperProfile: Profile
     {
-        public CinemaWorldMapperProfile() 
+        public MapperProfile() 
         {
             CreateMap<CinemaWorldMovieDetailsDTO, MovieViewModel>();
-            CreateMap<MovieViewModel, CinemaWorldMovieDetailsDTO>();
+            CreateMap<FilmWorldMovieDetailsDTO, MovieViewModel>();
         }
     }
 }

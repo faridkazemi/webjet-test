@@ -28,7 +28,7 @@ namespace CinemaWorldDataSync.Test
                 services.Configure<RedisConfigOption>(hostconfig.Configuration.GetSection(nameof(RedisConfigOption)));
 
                 services.AddTransient<IRedisService, RedisService>();
-                services.AddTransient<ISinemaWorldMovieProvider, SinemaWorldMovieProvider>();
+                services.AddTransient<ICinemaWorldMovieProvider, SinemaWorldMovieProvider>();
                 services.AddTransient<ISyncDataService, SyncDataService>();
                 services.AddLogging();
                 services.AddScoped<IRedisService, RedisService>();

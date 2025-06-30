@@ -1,20 +1,21 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Polly.Extensions.Http;
 using Polly;
-using CinemaWorldDataSync.OptionModels;
+using FilmWorldDataSync.OptionModels;
 using RedisLibrary;
 using StackExchange.Redis;
-using CinemaWorldDataSync.Services.Interfaces;
-using CinemaWorldDataSync.Services;
+using FilmWorldDataSync.Services.Interfaces;
+using FilmWorldDataSync.Services;
 using Microsoft.Extensions.Configuration;
+using filmWorldDataSync.Services.Interfaces;
 
-namespace CinemaWorldDataSync
+namespace FilmWorldDataSync
 {
     public static class ServiceExtension
     {
-        public static IServiceCollection AddServices(this IServiceCollection services, CinemaWorldConfigurationOption configOption, RedisConfigOption redisConfigOption)
+        public static IServiceCollection AddServices(this IServiceCollection services, FilmWorldConfigurationOption configOption, RedisConfigOption redisConfigOption)
         {
-            services.AddHttpClient(configOption.CinemaMovieHttpClientName,
+            services.AddHttpClient(configOption.FilmMovieHttpClientName,
                 client =>
                 {
                     client.BaseAddress = new Uri(configOption.BaseUrl);
@@ -30,7 +31,7 @@ namespace CinemaWorldDataSync
             });
 
             services.AddTransient<IRedisService, RedisService>();
-            services.AddTransient<ICinemaWorldMovieProvider, CinemaWorldMovieProvider>();
+            services.AddTransient<IFilmWorldMovieProvider, FilmWorldMovieProvider>();
             services.AddTransient<ISyncDataService, SyncDataService>();
 
             return services;

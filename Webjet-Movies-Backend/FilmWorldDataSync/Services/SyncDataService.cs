@@ -1,19 +1,20 @@
-﻿using CinemaWorldDataSync.DTO;
-using CinemaWorldDataSync.Services.Interfaces;
+﻿using filmWorldDataSync.Services.Interfaces;
+using FilmWorldDataSync.DTO;
+using FilmWorldDataSync.Services.Interfaces;
 using Microsoft.Extensions.Logging;
 using RedisLibrary;
 
-namespace CinemaWorldDataSync.Services
+namespace FilmWorldDataSync.Services
 {
     public class SyncDataService: ISyncDataService
     {
         private ILogger<SyncDataService> _logger;
-        private ICinemaWorldMovieProvider _movieProvider;
+        private IFilmWorldMovieProvider _movieProvider;
         private IRedisService _redisService;
 
         public SyncDataService(
             ILogger<SyncDataService> logger,
-            ICinemaWorldMovieProvider movieProvider,
+            IFilmWorldMovieProvider movieProvider,
             IRedisService redisService)
         {
             _logger = logger;
@@ -22,7 +23,7 @@ namespace CinemaWorldDataSync.Services
         }
 
         /// <summary>
-        /// A background job that can be scheduled to fetch the movies from CinemaWorldMovie server
+        /// A background job that can be scheduled to fetch the movies from FilmWorldMovie server
         /// and save them in redis cache.
         /// </summary>
         /// <param name="cancellationToken"></param>
@@ -45,7 +46,7 @@ namespace CinemaWorldDataSync.Services
                     {
                         
                         // TODO move the key to the config values
-                        await _redisService.SetAsync("movies:cinemaWorldMovies", serverResponseMovie);
+                        await _redisService.SetAsync("movies:filmWorldMovies", serverResponseMovie);
                         
                     }
 
@@ -54,7 +55,7 @@ namespace CinemaWorldDataSync.Services
                 catch (Exception ex)
                 {
                     // We don't want to throw exception. Just log and go.
-                    _logger.LogError(ex, $"Faild to run CinemaWorldDataSync");
+                    _logger.LogError(ex, $"Faild to run FilmWorldDataSync");
                 }
 
                 // To schedule the serviece to fetch data and save in redis every 5 minut.

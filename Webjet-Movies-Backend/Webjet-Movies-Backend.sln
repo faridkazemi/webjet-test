@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webjet-Movies-Backend", "We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaWorldDataSync.Test", "CinemaWorldDataSync.Test\CinemaWorldDataSync.Test.csproj", "{F67BCCE1-F94D-4957-BA71-DFA187A4420D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmWorldDataSync", "FilmWorldDataSync\FilmWorldDataSync.csproj", "{2EB59E4E-CA33-42AC-979B-20F7CD645C3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{F67BCCE1-F94D-4957-BA71-DFA187A4420D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F67BCCE1-F94D-4957-BA71-DFA187A4420D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F67BCCE1-F94D-4957-BA71-DFA187A4420D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB59E4E-CA33-42AC-979B-20F7CD645C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB59E4E-CA33-42AC-979B-20F7CD645C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB59E4E-CA33-42AC-979B-20F7CD645C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB59E4E-CA33-42AC-979B-20F7CD645C3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

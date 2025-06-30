@@ -1,37 +1,38 @@
-﻿using CinemaWorldDataSync.DTO;
-using CinemaWorldDataSync.OptionModels;
-using CinemaWorldDataSync.Services.Interfaces;
+﻿using filmWorldDataSync.Services.Interfaces;
+using FilmWorldDataSync.DTO;
+using FilmWorldDataSync.OptionModels;
+using FilmWorldDataSync.Services.Interfaces;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Net.Http.Json;
 
-namespace CinemaWorldDataSync.Services
+namespace FilmWorldDataSync.Services
 {
-    public class CinemaWorldMovieProvider: ICinemaWorldMovieProvider
+    public class FilmWorldMovieProvider: IFilmWorldMovieProvider
     {
-        private CinemaWorldConfigurationOption _configs;
+        private FilmWorldConfigurationOption _configs;
         private IHttpClientFactory _httpClientFactory;
-        private ILogger<CinemaWorldMovieProvider> _logger;
+        private ILogger<FilmWorldMovieProvider> _logger;
 
-        public CinemaWorldMovieProvider(
-            IOptions<CinemaWorldConfigurationOption> configOption,
+        public FilmWorldMovieProvider(
+            IOptions<FilmWorldConfigurationOption> configOption,
             IHttpClientFactory httpClientFactory,
-            ILogger<CinemaWorldMovieProvider> logger) 
+            ILogger<FilmWorldMovieProvider> logger) 
         {
             _configs = configOption.Value;
             _httpClientFactory = httpClientFactory;
             _logger = logger;
         }
-        public async Task<CinemaWorldMoviesDTO> FetchMoviesAsync(CancellationToken cancellationToken)
+        public async Task<FilmWorldMoviesDTO> FetchMoviesAsync(CancellationToken cancellationToken)
         {
             try
             {
-                _logger.LogInformation($"Fetching movies from CinemaWorldMovies...");
+                _logger.LogInformation($"Fetching movies from FilmWorldMovies...");
 
-                //var response = new CinemaWorldMoviesDTO();
-                //response.Movies = new List<CinemaWorldMovieDTO> { new CinemaWorldMovieDTO {ID="111", Title="AAAA" } };
-                var response = await _httpClientFactory.CreateClient(_configs.CinemaMovieHttpClientName)
-                    .GetFromJsonAsync<CinemaWorldMoviesDTO>("movies", cancellationToken);
+                //var response = new FilmWorldMoviesDTO();
+                //response.Movies = new List<FilmWorldMovieDTO> { new FilmWorldMovieDTO {ID="111", Title="AAAA" } };
+                var response = await _httpClientFactory.CreateClient(_configs.FilmMovieHttpClientName)
+                    .GetFromJsonAsync<FilmWorldMoviesDTO>("movies", cancellationToken);
 
                 return response;
             }
@@ -39,27 +40,27 @@ namespace CinemaWorldDataSync.Services
             {
                 // We don't throw any exception. We just want to log it.
                 _logger.LogError(ex, $"Faild to Get Movies from server.");
-                return new CinemaWorldMoviesDTO();
+                return new FilmWorldMoviesDTO();
             }
         }
 
-        public async Task<CinemaWorldMovieDetailsDTO> FetchMoviesDetailsAsync(string id, CancellationToken cancellationToken)
+        public async Task<FilmWorldMovieDetailsDTO> FetchMoviesDetailsAsync(string id, CancellationToken cancellationToken)
         {
             try
             {
-                _logger.LogInformation($"Fetching movie details from CinemaWorldMovies. movieId: {id}...");
+                _logger.LogInformation($"Fetching movie details from FilmWorldMovies. movieId: {id}...");
 
-                //var response = new CinemaWorldMovieDetailsDTO { ID = "111", Title = "AAAA" };
+                //var response = new FilmWorldMovieDetailsDTO { ID = "111", Title = "AAAA" };
 
                 // TODO added for testing and needs to be removed
-                var client = _httpClientFactory.CreateClient(_configs.CinemaMovieHttpClientName);
+                var client = _httpClientFactory.CreateClient(_configs.FilmMovieHttpClientName);
 
                 var requestUri = new Uri(client.BaseAddress, $"movie/{id}");
 
                 Console.WriteLine($"************************** {requestUri}****");
                 
-                var response = await _httpClientFactory.CreateClient(_configs.CinemaMovieHttpClientName)
-                    .GetFromJsonAsync<CinemaWorldMovieDetailsDTO>($"movie/{id}", cancellationToken);
+                var response = await _httpClientFactory.CreateClient(_configs.FilmMovieHttpClientName)
+                    .GetFromJsonAsync<FilmWorldMovieDetailsDTO>($"movie/{id}", cancellationToken);
                 
                 return response;
             }
@@ -67,11 +68,11 @@ namespace CinemaWorldDataSync.Services
             {
                 // We don't throw any exception. We just want to log it.
                 _logger.LogError(ex, $"Faild to Get Movies from server. movieId: {id}");
-                return new CinemaWorldMovieDetailsDTO();
+                return new FilmWorldMovieDetailsDTO();
             }
         }
 
-        public async Task<List<CinemaWorldMovieDetailsDTO>> GetFullMovieDeatilsAsync(CancellationToken cancellationToken)
+        public async Task<List<FilmWorldMovieDetailsDTO>> GetFullMovieDeatilsAsync(CancellationToken cancellationToken)
         {
             try
             {
@@ -79,7 +80,7 @@ namespace CinemaWorldDataSync.Services
 
                 if (movieSummary == null || movieSummary.Movies == null || movieSummary.Movies?.Count() == 0)
                 {
-                    return new List<CinemaWorldMovieDetailsDTO>();
+                    return new List<FilmWorldMovieDetailsDTO>();
                 }
                 else
                 {
@@ -93,13 +94,13 @@ namespace CinemaWorldDataSync.Services
                     var tasks = movies.Select(async movie =>
                     {
                         await semaphore.WaitAsync();
-                        var movieDetails = new CinemaWorldMovieDetailsDTO();
+                        var movieDetails = new FilmWorldMovieDetailsDTO();
 
                         try
                         {
                             movieDetails = await FetchMoviesDetailsAsync(movie.ID, cancellationToken);
 
-                            // Since CinemaWorldMovieDetails contains all the fields of CinemaWrldMovie, no mapping and data merging required.
+                            // Since FilmWorldMovieDetails contains all the fields of FilmWrldMovie, no mapping and data merging required.
                             return movieDetails;
                         }
                         catch (Exception ex)
@@ -108,7 +109,7 @@ namespace CinemaWorldDataSync.Services
 
                             // If there is any problem with fetching movie details from the server
                             // we can retun the least data we have from the summary api
-                            return new CinemaWorldMovieDetailsDTO
+                            return new FilmWorldMovieDetailsDTO
                             {
                                 ID = movie.ID,
                                 Title = movie.Title,
@@ -131,7 +132,7 @@ namespace CinemaWorldDataSync.Services
             catch(Exception ex)
             {
                 _logger.LogError(ex, $"Failed to get movie details.");
-                return new List<CinemaWorldMovieDetailsDTO>();
+                return new List<FilmWorldMovieDetailsDTO>();
             }
         }
     }

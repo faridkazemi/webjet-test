@@ -39,8 +39,9 @@ try
     });
 
     builder.Services.AddTransient<IMovieDataProvider<List<CinemaWorldMovieDetailsDTO>>, MovieDataProvider<List<CinemaWorldMovieDetailsDTO>>>();
+    builder.Services.AddTransient<IMovieDataProvider<List<FilmWorldMovieDetailsDTO>>, MovieDataProvider<List<FilmWorldMovieDetailsDTO>>>();
     builder.Services.AddTransient<IRedisService, RedisService>();
-    builder.Services.AddAutoMapper(typeof(CinemaWorldMapperProfile));
+    builder.Services.AddAutoMapper(typeof(MapperProfile));
 
     var allowOrigin = "AllowAngularApp";
 
@@ -65,7 +66,7 @@ try
         app.UseSwaggerUI();
     }
 
-    app.UseMiddleware<ExceptionHandlingMiddleware>();
+    //app.UseMiddleware<ExceptionHandlingMiddleware>();
 
     app.UseAuthorization();
 

@@ -53,6 +53,7 @@
 	</ngx-datatable-column>
     <ngx-datatable-column name="Provider">
 		<ng-template [width]="100" ngx-datatable-cell-template let-value="value">
+            {{value}}
             <i *ngIf="value === 'FilmWorld'" class="bi bi-camera-reels text-primary"></i>
             <i *ngIf="value === 'CinemaWorld'" class="bi bi-film text-danger"></i>
 		</ng-template>
