@@ -3,6 +3,7 @@ using RedisLibrary;
 using StackExchange.Redis;
 using Webjet_Movies_Backend.ConfigOptions;
 using Webjet_Movies_Backend.Mappers;
+using Webjet_Movies_Backend.Middlewares;
 using Webjet_Movies_Backend.Models.DTO;
 using Webjet_Movies_Backend.Services;
 using Webjet_Movies_Backend.Services.Interfaces;
@@ -45,13 +46,13 @@ try
 
     builder.Services.AddCors(options =>
     {
+        // TODO add proper origin policy in prod
         options.AddPolicy(name: allowOrigin,
                           policy =>
                           {
-                              policy.AllowAnyOrigin()//WithOrigins("http://localhost:4200")
+                              policy.WithOrigins("http://localhost:4200")
                                     .AllowAnyHeader()
                                     .AllowAnyMethod();
-                              //.AllowCredentials(); 
                           });
     });
 
@@ -64,12 +65,10 @@ try
         app.UseSwaggerUI();
     }
 
-    //app.UseHttpsRedirection();
+    app.UseMiddleware<ExceptionHandlingMiddleware>();
 
     app.UseAuthorization();
 
-
-    //app.UseMiddleware<RequestLoggingMiddleware>();
     app.UseCors(allowOrigin);
 
     app.MapControllers();

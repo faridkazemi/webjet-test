@@ -73,57 +73,65 @@ namespace CinemaWorldDataSync.Services
 
         public async Task<List<CinemaWorldMovieDetailsDTO>> GetFullMovieDeatilsAsync(CancellationToken cancellationToken)
         {
-            var movieSummary = await FetchMoviesAsync(cancellationToken);
-
-            if (movieSummary == null || movieSummary.Movies.Count() == 0)
+            try
             {
-                return new List<CinemaWorldMovieDetailsDTO>();
-            }
-            else
-            {
-                var movies = movieSummary.Movies;
+                var movieSummary = await FetchMoviesAsync(cancellationToken);
 
-                // To handle possible API rate limiting and manage performance and scalability
-                // I decided to use SemaphoreSlim to limit the number of concurrent parallel calls. 
-                // it is more useful in the real world scenarios where we might have many movies
-                var semaphore = new SemaphoreSlim(10);
-
-                var tasks = movies.Select(async movie =>
+                if (movieSummary == null || movieSummary.Movies == null || movieSummary.Movies?.Count() == 0)
                 {
-                    await semaphore.WaitAsync();
-                    var movieDetails = new CinemaWorldMovieDetailsDTO();
+                    return new List<CinemaWorldMovieDetailsDTO>();
+                }
+                else
+                {
+                    var movies = movieSummary.Movies;
 
-                    try
+                    // To handle possible API rate limiting and manage performance and scalability
+                    // I decided to use SemaphoreSlim to limit the number of concurrent parallel calls. 
+                    // it is more useful in the real world scenarios where we might have many movies
+                    var semaphore = new SemaphoreSlim(10);
+
+                    var tasks = movies.Select(async movie =>
                     {
-                        movieDetails = await FetchMoviesDetailsAsync(movie.ID, cancellationToken);
+                        await semaphore.WaitAsync();
+                        var movieDetails = new CinemaWorldMovieDetailsDTO();
 
-                        // Since CinemaWorldMovieDetails contains all the fields of CinemaWrldMovie, no mapping and data merging required.
-                        return movieDetails;
-                    }
-                    catch (Exception ex)
-                    {
-                        _logger.LogError(ex, $"Faild to get full movie details.");
-
-                        // If there is any problem with fetching movie details from the server
-                        // we can retun the least data we have from the summary api
-                        return new CinemaWorldMovieDetailsDTO
+                        try
                         {
-                            ID = movie.ID,
-                            Title = movie.Title,
-                            Year = movie.Year,
-                            Type = movie.Type,
-                            Poster = movie.Poster,
-                        };
-                    }
-                    finally
-                    {
-                        semaphore.Release();
-                    }
-                });
+                            movieDetails = await FetchMoviesDetailsAsync(movie.ID, cancellationToken);
 
-                var result = await Task.WhenAll(tasks);
+                            // Since CinemaWorldMovieDetails contains all the fields of CinemaWrldMovie, no mapping and data merging required.
+                            return movieDetails;
+                        }
+                        catch (Exception ex)
+                        {
+                            _logger.LogError(ex, $"Faild to get full movie details.");
 
-                return result.ToList();
+                            // If there is any problem with fetching movie details from the server
+                            // we can retun the least data we have from the summary api
+                            return new CinemaWorldMovieDetailsDTO
+                            {
+                                ID = movie.ID,
+                                Title = movie.Title,
+                                Year = movie.Year,
+                                Type = movie.Type,
+                                Poster = movie.Poster,
+                            };
+                        }
+                        finally
+                        {
+                            semaphore.Release();
+                        }
+                    });
+
+                    var result = await Task.WhenAll(tasks);
+
+                    return result.ToList();
+                }
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, $"Failed to get movie details.");
+                return new List<CinemaWorldMovieDetailsDTO>();
             }
         }
     }

@@ -27,20 +27,29 @@ namespace CinemaWorldDataSync.Services
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        public async Task RunAsync(CancellationToken cancellationToken)
+        public async Task RunAsync(CancellationToken cancellationToken, int interval)
         {
+            var counter = 0;
             while (!cancellationToken.IsCancellationRequested)
             {
                 try
                 {
+                    if (counter >= 1 && interval == 0)
+                    {
+                        break;
+                    }
+
                     var serverResponseMovie = await _movieProvider.GetFullMovieDeatilsAsync(cancellationToken);
 
                     if (serverResponseMovie != null && serverResponseMovie.Count() > 0) 
                     {
+                        
                         // TODO move the key to the config values
                         await _redisService.SetAsync("movies:cinemaWorldMovies", serverResponseMovie);
+                        
                     }
-                    
+
+                    counter++;
                 }
                 catch (Exception ex)
                 {
@@ -50,7 +59,7 @@ namespace CinemaWorldDataSync.Services
 
                 // To schedule the serviece to fetch data and save in redis every 5 minut.
                 // TODO move it to config values.
-                await Task.Delay(TimeSpan.FromMinutes(5), cancellationToken);
+                await Task.Delay(TimeSpan.FromSeconds(interval), cancellationToken);
             }
             
         }

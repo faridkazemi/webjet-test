@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisLibrary.Test", "RedisL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webjet-Movies-Backend", "Webjet-Movies-Backend\Webjet-Movies-Backend.csproj", "{71471269-1701-4C7A-8671-14B30EDB6ACD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaWorldDataSync.Test", "CinemaWorldDataSync.Test\CinemaWorldDataSync.Test.csproj", "{F67BCCE1-F94D-4957-BA71-DFA187A4420D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{71471269-1701-4C7A-8671-14B30EDB6ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71471269-1701-4C7A-8671-14B30EDB6ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71471269-1701-4C7A-8671-14B30EDB6ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67BCCE1-F94D-4957-BA71-DFA187A4420D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67BCCE1-F94D-4957-BA71-DFA187A4420D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67BCCE1-F94D-4957-BA71-DFA187A4420D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67BCCE1-F94D-4957-BA71-DFA187A4420D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

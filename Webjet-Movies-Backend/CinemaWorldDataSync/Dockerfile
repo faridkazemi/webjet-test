@@ -12,6 +12,7 @@ COPY ["Webjet-Movies-Backend.sln", "."]
 COPY ["CinemaWorldDataSync/CinemaWorldDataSync.csproj", "CinemaWorldDataSync/"]
 COPY ["RedisLibrary/RedisLibrary.csproj", "RedisLibrary/"]
 COPY ["RedisLibrary.Test/RedisLibrary.Test.csproj", "RedisLibrary.Test/"]
+COPY ["CinemaWorldDataSync.Test/CinemaWorldDataSync.Test.csproj", "CinemaWorldDataSync.Test/"]
 COPY ["Webjet-Movies-Backend/Webjet-Movies-Backend.csproj", "Webjet-Movies-Backend/"]
 RUN dotnet restore "Webjet-Movies-Backend.sln"
 

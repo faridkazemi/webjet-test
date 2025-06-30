@@ -63,6 +63,6 @@ AppDomain.CurrentDomain.ProcessExit += (sender, args) =>
     cts.Cancel();
 };
 
-await syncService.RunAsync(cts.Token);
+await syncService.RunAsync(cts.Token, 300);
 
 

@@ -2,6 +2,6 @@
 {
     public interface ISyncDataService
     {
-        public Task RunAsync(CancellationToken cancellationToken);
+        public Task RunAsync(CancellationToken cancellationToken, int interval);
     }
 }
