@@ -1,8 +1,8 @@
 using Asp.Versioning;
 using RedisLibrary;
 using StackExchange.Redis;
-using Webjet_Movies_Backend;
 using Webjet_Movies_Backend.ConfigOptions;
+using Webjet_Movies_Backend.Mappers;
 using Webjet_Movies_Backend.Models.DTO;
 using Webjet_Movies_Backend.Services;
 using Webjet_Movies_Backend.Services.Interfaces;
@@ -37,9 +37,9 @@ try
         return ConnectionMultiplexer.Connect(redisOptions.ConnectionString);
     });
 
-    builder.Services.AddTransient<IMovieDataProvider<CinemaWorldMoviesDTO>, MovieDataProvider<CinemaWorldMoviesDTO>>();
+    builder.Services.AddTransient<IMovieDataProvider<List<CinemaWorldMovieDetailsDTO>>, MovieDataProvider<List<CinemaWorldMovieDetailsDTO>>>();
     builder.Services.AddTransient<IRedisService, RedisService>();
-
+    builder.Services.AddAutoMapper(typeof(CinemaWorldMapperProfile));
 
     var allowOrigin = "AllowAngularApp";
 

@@ -5,11 +5,57 @@
     <ngx-datatable *ngIf="!isLoading" 
     class="bootstrap"
     [rows]="cinemaWorldMovies"
-    [columns]="[{ name: 'Title' }, { name: 'Type'}, {name: 'Year'}]"
+    [columns]="[{ name: 'Title' }, {name: 'Rating'}, {name: 'Rated'}, {name: 'genre'}, {name: 'Year'}, {name: 'Director'}, { name: 'Type'}, {name: 'Price'}, {name: 'Provider'}]"
     [headerHeight]="50"
     [footerHeight]="50"
     rowHeight="auto"
     [limit]="10">
-        
+
+    <ngx-datatable-column [width]="250" name="Title">
+		<ng-template ngx-datatable-cell-template let-value="value">
+			{{value}}
+		</ng-template>
+	</ngx-datatable-column>
+    <ngx-datatable-column [width]="30" name="Rating">
+		<ng-template ngx-datatable-cell-template let-value="value">
+			{{value}}
+		</ng-template>
+	</ngx-datatable-column>
+    <ngx-datatable-column [width]="30" name="Rated">
+		<ng-template ngx-datatable-cell-template let-value="value">
+			{{value}}
+		</ng-template>
+	</ngx-datatable-column>
+    <ngx-datatable-column [width]="70" name="Genre">
+		<ng-template ngx-datatable-cell-template let-value="value">
+			{{value}}
+		</ng-template>
+	</ngx-datatable-column>
+    <ngx-datatable-column name="Year">
+		<ng-template [width]="50"  ngx-datatable-cell-template let-value="value">
+			{{value}}
+		</ng-template>
+	</ngx-datatable-column>
+    <ngx-datatable-column name="Director">
+		<ng-template [width]="100" ngx-datatable-cell-template let-value="value">
+			{{value}}
+		</ng-template>
+	</ngx-datatable-column>
+    <ngx-datatable-column name="Type">
+		<ng-template [width]="70" ngx-datatable-cell-template let-value="value">
+			{{value}}
+		</ng-template>
+	</ngx-datatable-column>
+    <ngx-datatable-column name="Price">
+		<ng-template [width]="100" ngx-datatable-cell-template let-value="value">
+			{{value}} AUD
+		</ng-template>
+	</ngx-datatable-column>
+    <ngx-datatable-column name="Provider">
+		<ng-template [width]="100" ngx-datatable-cell-template let-value="value">
+            <i *ngIf="value === 'FilmWorld'" class="bi bi-camera-reels text-primary"></i>
+            <i *ngIf="value === 'CinemaWorld'" class="bi bi-film text-danger"></i>
+		</ng-template>
+	</ngx-datatable-column>
     </ngx-datatable>
 </div>

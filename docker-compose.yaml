@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  cinamWorldDataSync:
+    build:
+      context: ./Webjet-Movies-Backend
+      dockerfile: ./CinemaWorldDataSync/Dockerfile
+    image: cinemaworlddatasync
+    container_name: cinemaWorldDataSync
+    depends_on:
+      - redis
+    env_file:
+      - "./.env"
+    environment:
+      - RedisConfigOption__ConnectionString=${RedisConfigOption__ConnectionString}
+      - CinemaWorldConfigurationOption__CinemaMovieHttpClientName=${CinemaWorldConfigurationOption__CinemaMovieHttpClientName}
+      - CinemaWorldConfigurationOption__BaseUrl=${CinemaWorldConfigurationOption__BaseUrl}
+    secrets:
+        - CinemaWorldConfigurationOption__AccessToken
+
+  Webjet-Movies-Backend:
+    build:
+      context: ./Webjet-Movies-Backend
+      dockerfile: ./Webjet-Movies-Backend/Dockerfile
+    image: webjetmoviesbackend
+    container_name: webjetMoviesBackend
+    depends_on:
+      - redis
+      - cinamWorldDataSync
+    env_file:
+      - "./.env"
+    environment:
+      - RedisConfigOption__ConnectionString=${RedisConfigOption__ConnectionString}
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_HTTP_PORTS=80
+    # ports:
+    #   - "8080:80"
+
+  webjet-movies-web-app:
+    build:
+      context: .
+      dockerfile: ./webjet-movies-web-app/Dockerfile_Angular
+    container_name: webjet-movies-web-app
+    ports:
+      - "4200:80"
+    depends_on:
+      - Webjet-Movies-Backend
+    environment:
+      - API_ENDPOINT_URL=http://Webjet-Movies-Backend:80/api
+
+secrets:
+  CinemaWorldConfigurationOption__AccessToken:
+   file: ./Webjet-Movies-Backend/secrets/CinemaWorldConfigurationOption__AccessToken.txt

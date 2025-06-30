@@ -1,7 +1,8 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-import { CinemaWorldMovieModel } from "../model/cinema-world-movie.model";
+import { CinemaWorldMovieModel } from "../model/cinemaWorldMovie.model";
+import { CinemaWorldMovieDetailsModel } from "../model/cinemaWorldMovieDetails.model";
 
 @Injectable({
     providedIn: 'root'
@@ -11,8 +12,8 @@ import { CinemaWorldMovieModel } from "../model/cinema-world-movie.model";
   //'http://localhost:5112/api/v1/movies';
     constructor(private http: HttpClient) {}
   
-    getMovies(): Observable<CinemaWorldMovieModel[]> {
-      return this.http.get<CinemaWorldMovieModel[]>(`${this.baseUrl}`);
+    getMovies(): Observable<CinemaWorldMovieDetailsModel[]> {
+      return this.http.get<CinemaWorldMovieDetailsModel[]>(`${this.baseUrl}`);
     }
 
   }

@@ -3,96 +3,63 @@
   "WorkspaceRootPath": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\dto\\cinemaworldmoviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\dto\\cinemaworldmoviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\webjet-movies-backend\\controllers\\cinemaworldcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|solutionrelative:webjet-movies-backend\\controllers\\cinemaworldcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\webjet-movies-backend\\models\\viewmodels\\movieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|solutionrelative:webjet-movies-backend\\models\\viewmodels\\movieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\services\\syncdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\services\\syncdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\webjet-movies-backend\\mappers\\cinemaworldmapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|solutionrelative:webjet-movies-backend\\mappers\\cinemaworldmapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\webjet-movies-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|solutionrelative:webjet-movies-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\dto\\cinemaworldmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\dto\\cinemaworldmovies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9B89D45-9DF8-4C67-911B-BBBE746D2306}|Solution Items{A9B89D45-9DF8-4C67-911B-BBBE746D2306}|C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\docker-compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A9B89D45-9DF8-4C67-911B-BBBE746D2306}|Solution Items{A9B89D45-9DF8-4C67-911B-BBBE746D2306}|solutionrelative:docker-compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\optionmodels\\cinemaworldconfigurationoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\optionmodels\\cinemaworldconfigurationoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\services\\sinemaworldmovieprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\services\\sinemaworldmovieprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9B89D45-9DF8-4C67-911B-BBBE746D2306}|Solution Items{A9B89D45-9DF8-4C67-911B-BBBE746D2306}|C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A9B89D45-9DF8-4C67-911B-BBBE746D2306}|Solution Items{A9B89D45-9DF8-4C67-911B-BBBE746D2306}|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\optionmodels\\redisconfigoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\optionmodels\\redisconfigoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\webjet-movies-backend\\models\\dto\\cinemaworldmoviedetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71471269-1701-4C7A-8671-14B30EDB6ACD}|Webjet-Movies-Backend\\Webjet-Movies-Backend.csproj|solutionrelative:webjet-movies-backend\\models\\dto\\cinemaworldmoviedetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8334C00-6B80-457C-A803-425052FB10F1}|RedisLibrary\\RedisLibrary.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\redislibrary\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8334C00-6B80-457C-A803-425052FB10F1}|RedisLibrary\\RedisLibrary.csproj|solutionrelative:redislibrary\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\services\\syncdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\services\\syncdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\services\\sinemaworldmovieprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\services\\sinemaworldmovieprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\dto\\cinemaworldmoviedetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\dto\\cinemaworldmoviedetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\work\\webjet-test\\webjet-test\\docker-compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\services\\interfaces\\isinemaworldmovieprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\services\\interfaces\\isinemaworldmovieprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\services\\interfaces\\isyncdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\services\\interfaces\\isyncdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}|RedisLibrary.Test\\RedisLibrary.Test.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\redislibrary.test\\redislibrarytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98D59DE-DB46-4B4B-B6FA-D6D329164BAA}|RedisLibrary.Test\\RedisLibrary.Test.csproj|solutionrelative:redislibrary.test\\redislibrarytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8334C00-6B80-457C-A803-425052FB10F1}|RedisLibrary\\RedisLibrary.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\redislibrary\\iredisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8334C00-6B80-457C-A803-425052FB10F1}|RedisLibrary\\RedisLibrary.csproj|solutionrelative:redislibrary\\iredisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Controllers\\CinemaWorldController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Webjet-Movies-Backend\\Controllers\\CinemaWorldController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\PagingParameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Webjet-Movies-Backend\\Models\\PagingParameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\ViewModels\\CinemaWorldMovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Webjet-Movies-Backend\\Models\\ViewModels\\CinemaWorldMovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Webjet-Movies-Backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|c:\\work\\webjet-test\\webjet-test\\webjet-movies-backend\\cinemaworlddatasync\\dto\\cinemaworldmoviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAB7AFD5-FFAA-4B51-B411-5A20E7B2E106}|CinemaWorldDataSync\\CinemaWorldDataSync.csproj|solutionrelative:cinemaworlddatasync\\dto\\cinemaworldmoviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -143,293 +110,197 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Properties\\launchSettings.json",
-              "RelativeToolTip": "CinemaWorldDataSync\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-29T04:15:25.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "docker-compose.yaml",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\docker-compose.yaml",
-              "RelativeDocumentMoniker": "docker-compose.yaml",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\docker-compose.yaml",
-              "RelativeToolTip": "docker-compose.yaml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAlwBsAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-06-27T22:31:13.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceExtension.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\ServiceExtension.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\ServiceExtension.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\ServiceExtension.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\ServiceExtension.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAArwD4AAAA1AAAA",
+              "Title": "MovieViewModel.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\ViewModels\\MovieViewModel.cs",
+              "RelativeDocumentMoniker": "Webjet-Movies-Backend\\Models\\ViewModels\\MovieViewModel.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\ViewModels\\MovieViewModel.cs",
+              "RelativeToolTip": "Webjet-Movies-Backend\\Models\\ViewModels\\MovieViewModel.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAqwCkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T21:34:26.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Program.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Program.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Program.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\Program.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAArwCwAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T21:07:54.812Z",
+              "WhenOpened": "2025-06-30T02:02:19.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SyncDataService.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\SyncDataService.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Services\\SyncDataService.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\SyncDataService.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\Services\\SyncDataService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAARAAAA",
+              "Title": "CinemaWorldMapperProfile.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Mappers\\CinemaWorldMapperProfile.cs",
+              "RelativeDocumentMoniker": "Webjet-Movies-Backend\\Mappers\\CinemaWorldMapperProfile.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Mappers\\CinemaWorldMapperProfile.cs",
+              "RelativeToolTip": "Webjet-Movies-Backend\\Mappers\\CinemaWorldMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T23:25:38.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SinemaWorldMovieProvider.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\SinemaWorldMovieProvider.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Services\\SinemaWorldMovieProvider.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\SinemaWorldMovieProvider.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\Services\\SinemaWorldMovieProvider.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAowC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T01:15:16.292Z",
+              "WhenOpened": "2025-06-30T02:00:49.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CinemaWorldMovies.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\DTO\\CinemaWorldMovies.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\DTO\\CinemaWorldMovies.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\DTO\\CinemaWorldMovies.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\DTO\\CinemaWorldMovies.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Title": "CinemaWorldMovieDetailsDTO.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDetailsDTO.cs",
+              "RelativeDocumentMoniker": "Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDetailsDTO.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDetailsDTO.cs",
+              "RelativeToolTip": "Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDetailsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T02:30:10.682Z",
+              "WhenOpened": "2025-06-30T00:22:45.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CinemaWorldMovieDTO.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\DTO\\CinemaWorldMovieDTO.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\DTO\\CinemaWorldMovieDTO.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\DTO\\CinemaWorldMovieDTO.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\DTO\\CinemaWorldMovieDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T23:50:24.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ISyncDataService.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\Interfaces\\ISyncDataService.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Services\\Interfaces\\ISyncDataService.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\Interfaces\\ISyncDataService.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\Services\\Interfaces\\ISyncDataService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T01:12:06.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CinemaWorldConfigurationOption.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\OptionModels\\CinemaWorldConfigurationOption.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\OptionModels\\CinemaWorldConfigurationOption.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\OptionModels\\CinemaWorldConfigurationOption.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\OptionModels\\CinemaWorldConfigurationOption.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T21:48:10.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\appsettings.json",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\appsettings.json",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\appsettings.json",
-              "RelativeToolTip": "CinemaWorldDataSync\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-27T21:54:06.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RedisConfigOption.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\OptionModels\\RedisConfigOption.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\OptionModels\\RedisConfigOption.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\OptionModels\\RedisConfigOption.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\OptionModels\\RedisConfigOption.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T04:14:08.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Dockerfile",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Dockerfile",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Dockerfile",
-              "RelativeToolTip": "CinemaWorldDataSync\\Dockerfile",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-27T21:22:52.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RedisService.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\RedisLibrary\\RedisService.cs",
-              "RelativeDocumentMoniker": "RedisLibrary\\RedisService.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\RedisLibrary\\RedisService.cs",
-              "RelativeToolTip": "RedisLibrary\\RedisService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAArwCAAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T01:24:30.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\.env",
-              "RelativeDocumentMoniker": ".env",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\.env",
-              "RelativeToolTip": ".env",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-29T02:45:15.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "CinemaWorldController.cs",
               "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Controllers\\CinemaWorldController.cs",
               "RelativeDocumentMoniker": "Webjet-Movies-Backend\\Controllers\\CinemaWorldController.cs",
               "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Controllers\\CinemaWorldController.cs",
               "RelativeToolTip": "Webjet-Movies-Backend\\Controllers\\CinemaWorldController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAApwBMAAAAwAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T06:13:40.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ISinemaWorldMovieProvider.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\Interfaces\\ISinemaWorldMovieProvider.cs",
-              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Services\\Interfaces\\ISinemaWorldMovieProvider.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\Interfaces\\ISinemaWorldMovieProvider.cs",
-              "RelativeToolTip": "CinemaWorldDataSync\\Services\\Interfaces\\ISinemaWorldMovieProvider.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T23:59:51.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RedisLibraryTest.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\RedisLibrary.Test\\RedisLibraryTest.cs",
-              "RelativeDocumentMoniker": "RedisLibrary.Test\\RedisLibraryTest.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\RedisLibrary.Test\\RedisLibraryTest.cs",
-              "RelativeToolTip": "RedisLibrary.Test\\RedisLibraryTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T01:36:49.297Z",
+              "WhenOpened": "2025-06-30T00:22:18.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IRedisService.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\RedisLibrary\\IRedisService.cs",
-              "RelativeDocumentMoniker": "RedisLibrary\\IRedisService.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\RedisLibrary\\IRedisService.cs",
-              "RelativeToolTip": "RedisLibrary\\IRedisService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T01:23:54.809Z"
+              "DocumentIndex": 11,
+              "Title": "docker-compose.yaml",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\docker-compose.yaml",
+              "RelativeDocumentMoniker": "..\\docker-compose.yaml",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\docker-compose.yaml",
+              "RelativeToolTip": "..\\docker-compose.yaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-06-29T23:48:23.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CinemaWorldMovieDTO.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDTO.cs",
-              "RelativeDocumentMoniker": "Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDTO.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDTO.cs",
-              "RelativeToolTip": "Webjet-Movies-Backend\\Models\\DTO\\CinemaWorldMovieDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "DocumentIndex": 5,
+              "Title": "RedisService.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\RedisLibrary\\RedisService.cs",
+              "RelativeDocumentMoniker": "RedisLibrary\\RedisService.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\RedisLibrary\\RedisService.cs",
+              "RelativeToolTip": "RedisLibrary\\RedisService.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAwwEIAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T07:28:58.328Z"
+              "WhenOpened": "2025-06-29T23:24:43.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PagingParameters.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\PagingParameters.cs",
-              "RelativeDocumentMoniker": "Webjet-Movies-Backend\\Models\\PagingParameters.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\PagingParameters.cs",
-              "RelativeToolTip": "Webjet-Movies-Backend\\Models\\PagingParameters.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "DocumentIndex": 6,
+              "Title": "SyncDataService.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\SyncDataService.cs",
+              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Services\\SyncDataService.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\SyncDataService.cs",
+              "RelativeToolTip": "CinemaWorldDataSync\\Services\\SyncDataService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAqwCUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T08:05:22.529Z"
+              "WhenOpened": "2025-06-29T23:09:55.164Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CinemaWorldMovie.cs",
-              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\ViewModels\\CinemaWorldMovie.cs",
-              "RelativeDocumentMoniker": "Webjet-Movies-Backend\\Models\\ViewModels\\CinemaWorldMovie.cs",
-              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Models\\ViewModels\\CinemaWorldMovie.cs",
-              "RelativeToolTip": "Webjet-Movies-Backend\\Models\\ViewModels\\CinemaWorldMovie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T07:25:12.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Program.cs",
               "RelativeDocumentMoniker": "Webjet-Movies-Backend\\Program.cs",
               "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\Webjet-Movies-Backend\\Program.cs",
               "RelativeToolTip": "Webjet-Movies-Backend\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAALAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAACkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T07:13:23.307Z"
+              "WhenOpened": "2025-06-30T00:25:09.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServiceExtension.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\ServiceExtension.cs",
+              "RelativeDocumentMoniker": "CinemaWorldDataSync\\ServiceExtension.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\ServiceExtension.cs",
+              "RelativeToolTip": "CinemaWorldDataSync\\ServiceExtension.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAwwDwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T23:04:43.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CinemaWorldMovieDTO.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\DTO\\CinemaWorldMovieDTO.cs",
+              "RelativeDocumentMoniker": "CinemaWorldDataSync\\DTO\\CinemaWorldMovieDTO.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\DTO\\CinemaWorldMovieDTO.cs",
+              "RelativeToolTip": "CinemaWorldDataSync\\DTO\\CinemaWorldMovieDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T22:27:15.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CinemaWorldMovieDetailsDTO.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\DTO\\CinemaWorldMovieDetailsDTO.cs",
+              "RelativeDocumentMoniker": "CinemaWorldDataSync\\DTO\\CinemaWorldMovieDetailsDTO.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\DTO\\CinemaWorldMovieDetailsDTO.cs",
+              "RelativeToolTip": "CinemaWorldDataSync\\DTO\\CinemaWorldMovieDetailsDTO.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA2wDAAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T22:24:09.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SinemaWorldMovieProvider.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\SinemaWorldMovieProvider.cs",
+              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Services\\SinemaWorldMovieProvider.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\SinemaWorldMovieProvider.cs",
+              "RelativeToolTip": "CinemaWorldDataSync\\Services\\SinemaWorldMovieProvider.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAwwH8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T22:14:37.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Program.cs",
+              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Program.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Program.cs",
+              "RelativeToolTip": "CinemaWorldDataSync\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwBsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T23:24:43.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\appsettings.json",
+              "RelativeDocumentMoniker": "CinemaWorldDataSync\\appsettings.json",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\appsettings.json",
+              "RelativeToolTip": "CinemaWorldDataSync\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-29T23:05:11.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ISinemaWorldMovieProvider.cs",
+              "DocumentMoniker": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\Interfaces\\ISinemaWorldMovieProvider.cs",
+              "RelativeDocumentMoniker": "CinemaWorldDataSync\\Services\\Interfaces\\ISinemaWorldMovieProvider.cs",
+              "ToolTip": "C:\\work\\webjet-test\\webjet-test\\Webjet-Movies-Backend\\CinemaWorldDataSync\\Services\\Interfaces\\ISinemaWorldMovieProvider.cs",
+              "RelativeToolTip": "CinemaWorldDataSync\\Services\\Interfaces\\ISinemaWorldMovieProvider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T23:10:10.972Z",
+              "EditorCaption": ""
             }
           ]
         }

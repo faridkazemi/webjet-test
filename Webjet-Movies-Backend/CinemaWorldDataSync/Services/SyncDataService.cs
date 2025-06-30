@@ -21,15 +21,21 @@ namespace CinemaWorldDataSync.Services
             _redisService = redisService;
         }
 
+        /// <summary>
+        /// A background job that can be scheduled to fetch the movies from CinemaWorldMovie server
+        /// and save them in redis cache.
+        /// </summary>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         public async Task RunAsync(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
             {
                 try
                 {
-                    var serverResponseMovie = await _movieProvider.GetMoviesAsync(cancellationToken);
+                    var serverResponseMovie = await _movieProvider.GetFullMovieDeatilsAsync(cancellationToken);
 
-                    if (serverResponseMovie != null && serverResponseMovie.Movies.Count() > 0) 
+                    if (serverResponseMovie != null && serverResponseMovie.Count() > 0) 
                     {
                         // TODO move the key to the config values
                         await _redisService.SetAsync("movies:cinemaWorldMovies", serverResponseMovie);
@@ -44,7 +50,7 @@ namespace CinemaWorldDataSync.Services
 
                 // To schedule the serviece to fetch data and save in redis every 5 minut.
                 // TODO move it to config values.
-                await Task.Delay(TimeSpan.FromMinutes(1), cancellationToken);
+                await Task.Delay(TimeSpan.FromMinutes(5), cancellationToken);
             }
             
         }
