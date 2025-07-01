@@ -4,5 +4,5 @@ Webject Movies test
 
 
 
-Please check the **Webjet-Movies-Test-Project** word file in the root folder. 
+Please check the **Webjet-Movies-Test-Project.docx** word file in the root folder. 
 
