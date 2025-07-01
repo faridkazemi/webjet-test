@@ -39,7 +39,7 @@ builder.ConfigureAppConfiguration((hostConfig, config) =>
 
     var isRunninningInContainer = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER");
 
-    var secretPath = isRunninningInContainer.ToLower() == "true" ? "/run/secrets" : "./secrets";
+    var secretPath = isRunninningInContainer?.ToLower() == "true" ? "/run/secrets" : "./secrets";
 
     config.AddSecrets(secretPath);
 });

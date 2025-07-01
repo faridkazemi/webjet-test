@@ -1,6 +1,7 @@
 using Asp.Versioning;
 using RedisLibrary;
 using StackExchange.Redis;
+using Webjet_Movies_Backend;
 using Webjet_Movies_Backend.ConfigOptions;
 using Webjet_Movies_Backend.Mappers;
 using Webjet_Movies_Backend.Middlewares;
@@ -17,6 +18,7 @@ try
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
+    // I have added versioning for the api
     builder.Services.AddApiVersioning(options =>
     {
         options.DefaultApiVersion = new Asp.Versioning.ApiVersion(1);
@@ -66,7 +68,11 @@ try
         app.UseSwaggerUI();
     }
 
-    //app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+    // TODO I commented this line since the frontend is not ready to send the key in the header yet.
+    //app.UseMiddleware<ApiKeyValidationMiddleware>();
+
+    app.UseMiddleware<ExceptionHandlingMiddleware>();
 
     app.UseAuthorization();
 
@@ -81,52 +87,4 @@ catch (Exception ex)
     Console.WriteLine(ex.Message);
     throw;
 }
-
-
-
-
-
-
-//// Program.cs - TEMPORARY DIAGNOSTIC VERSION
-//// MAKE SURE TO BACK UP YOUR ORIGINAL Program.cs FIRST!
-
-//using System;
-
-//var builder = WebApplication.CreateBuilder(args);
-
-//// TEMPORARY: Explicitly configure Kestrel to bind to port 80 using UseUrls
-//// This provides another layer of certainty for Kestrel's binding configuration
-//builder.WebHost.UseUrls("http://+:80");
-
-//var app = builder.Build();
-
-//// TEMPORARY: Remove ALL your application's middleware and routing for this test
-//// For example, comment out or remove these lines if they exist:
-//// app.UseHttpsRedirection();
-//// app.UseRouting();
-//// app.UseMiddleware<RequestLoggingMiddleware>();
-//// app.UseCors(MyAllowSpecificOrigins);
-//// app.MapControllers(); // Or app.UseEndpoints, app.UseSwagger, app.UseSwaggerUI, etc.
-
-//// TEMPORARY: Add a very simple endpoint to confirm Kestrel is working
-//app.MapGet("/", () => "Hello from Docker Kestrel!");
-//app.MapGet("/api/v1/movies", () => "Movies from Docker Kestrel!"); // Use the path Nginx expects
-
-//// Add a Console.WriteLine to see if this part of the code is reached
-//Console.WriteLine("Application is about to start running Kestrel and listen on port 80...");
-
-//try
-//{
-//    app.Run(); // This is the blocking call where Kestrel starts listening
-//    // This line below should ideally not be reached if Kestrel is running
-//    Console.WriteLine("Application has finished running Kestrel (this should not happen normally).");
-//}
-//catch (Exception ex)
-//{
-//    // This catch block is to ensure any very early startup exceptions are visible
-//    Console.Error.WriteLine($"FATAL EXCEPTION CAUGHT IN PROGRAM.CS: {ex.Message}");
-//    Console.Error.WriteLine(ex.ToString()); // Print full stack trace
-//}
-
-//Console.WriteLine("Application process ending."); // Final check if process terminates
 

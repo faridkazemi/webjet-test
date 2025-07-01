@@ -24,7 +24,7 @@ namespace Webjet_Movies_Backend.Middlewares
             }
             catch(Exception ex)
             {
-                _logger.LogError("Unhandle Exception");
+                _logger.LogError(ex, "Unhandle Exception");
 
                 context.Response.StatusCode = 500;
                 context.Response.ContentType = "application/json";

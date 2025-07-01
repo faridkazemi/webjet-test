@@ -63,9 +63,6 @@ namespace RedisLibrary
 
                 var result = await _database.StringGetAsync(key);
 
-                ////////////////////////////////////////Added for test
-                Console.WriteLine($"================== {result}");
-
                 return result.HasValue ? JsonSerializer.Deserialize<T>(result) : default(T?);
             }
             catch (RedisConnectionException ex)

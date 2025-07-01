@@ -51,9 +51,6 @@ namespace CinemaWorldDataSync.Test
 
                 Assert.NotNull(moviesInRedis);
                 Assert.Equal(2, moviesInRedis.Count);
-
-                var test = JsonSerializer.Serialize(moviesInRedis);
-                var a = 0;
             }
             catch(Exception ex)
             {

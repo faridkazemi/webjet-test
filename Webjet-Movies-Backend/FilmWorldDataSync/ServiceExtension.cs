@@ -15,6 +15,7 @@ namespace FilmWorldDataSync
     {
         public static IServiceCollection AddServices(this IServiceCollection services, FilmWorldConfigurationOption configOption, RedisConfigOption redisConfigOption)
         {
+          
             services.AddHttpClient(configOption.FilmMovieHttpClientName,
                 client =>
                 {
@@ -61,6 +62,8 @@ namespace FilmWorldDataSync
             }
             return config;
         }
+
+        // Using Polly to configure retry policies to improve resiliency
         static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
         {
             return HttpPolicyExtensions
